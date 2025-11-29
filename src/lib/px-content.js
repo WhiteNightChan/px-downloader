@@ -57,7 +57,7 @@ export default class PxContent {
         button.classList.add("px-button");
 
         if (isMobile) {
-            button.classList.add("mobile");
+            // button.classList.add("mobile");
             button.classList.add("c-gray-90");
         }
 
@@ -124,7 +124,7 @@ export default class PxContent {
         // Add button
         const addButton = (parent) => {
             if (isMobile) {
-                parent.insertBefore(button, parent.firstChild);
+                parent.insertBefore(button, parent.childNodes[4]);
             } else {
                 parent.appendChild(button);
             }
